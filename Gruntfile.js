@@ -42,7 +42,7 @@ module.exports = function (grunt) {
       },
       pages: {
         options: {
-          remote: 'git@github.com:MikeGalli/watts4000project02cweatherapp.git',
+          remote: 'git@github.com:MikeGalli/watts4000project02eweatherapp.git',
           branch: 'gh-pages'
         }
       }
