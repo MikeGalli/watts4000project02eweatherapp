@@ -8,10 +8,13 @@
  * Controller of the watts4000project02eweatherappApp
  */
 angular.module('watts4000project02eweatherappApp')
-  .controller('MainCtrl', function () {
-    this.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
-  });
+.controller('MainCtrl', function ($scope, citysearch) {
+  $scope.citiesFound = citysearch.find();
+
+  $scope.findCities = function(){
+      $scope.citiesFound = citysearch.find({
+          query: $scope.location
+      });
+      $scope.searchQuery = $scope.location;
+  };
+});
