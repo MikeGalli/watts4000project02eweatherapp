@@ -1,12 +1,35 @@
 <p>This is the forecast view.</p>
 
-<h1>16-day Forecast for {{forecastData.city.name}} {{forecastData.city.country}}</h1>
-<dl ng-repeat="prediction in forecastData.list" class="weather-forecast">
-    <dt>Forecast for {{weather.dt*1000 | date:'MMM dd, yyyy'}}</dt>
+<h1>5-day Forecast for {{forecastData.city.name}} {{forecastData.city.country}}</h1>
+
+<div class="container" style="width:100%">
+<dl class="col-sm-2" ng-repeat="prediction in forecastData.list" class="weather-forecast">
+    <dt><span class="smaller">Forecast for</span> {{prediction.dt*1000 | date:'MMM dd, yyyy'}}</dt>
+    <!--Start Insert a gif into forecast  -->
+    <dd><img ng-src= '{{prediction.weather[0].main}}' + '.gif' style="width:80px;"></dd>
+    <!--END Insert a gif into forecast  -->
+
     <dd>{{prediction.weather[0].main}}</dd>
     <dd>{{prediction.weather[0].description}}</dd>
     <dt>Temperature</dt>
     <dd>Min: {{prediction.temp.min}} &deg;F Max: {{prediction.temp.max}} &deg;F</dd>
 </dl>
+</div>
+
+<!--Start Flickr Photos//////////////////////////-->
+<div class="row marketing">
+
+  <div ng-controller="ForecastCtrl">
+    <h1>Weather for {{forecastData.city.name}}</h1>
+    <div class="photos" ng-repeat="photo in pics.photos.photo">
+  <!--              Header?  var
+  -->
+      <img ng-src={{photo.url_l}}>
+
+    </div>
+  </div>
+
+</div>
+<!--End Flickr Photos//////////////////////////-->
 
 <p><a ng-href="#/current/{{cityID}}" class="btn btn-lg btn-primary">View Current Weather</a></p>

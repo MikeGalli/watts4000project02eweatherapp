@@ -1,7 +1,18 @@
+
+//Start Override Bootstrap Variables
+@import "variables";
+//End Override Bootstrap Variables
+
 $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
 // bower:scss
 @import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
 // endbower
+
+//Start Site Specific Partials
+@import "transitions";
+@import "icon";
+@import "fonts";
+//End Site Specific Partials
 
 .browsehappy {
   margin: 0.2em 0;
@@ -70,7 +81,7 @@ body {
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 730px;
+    max-width: 95%;
   }
 
   /* Remove the padding we set earlier */
