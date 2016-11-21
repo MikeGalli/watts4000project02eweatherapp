@@ -42,9 +42,9 @@ getWeatherImage is looking for a value inside the parenthesis ()
 */
 ///Start Weather icons//////////
 $scope.getWeatherImage = function(weatherSummary){
-    /*var weatherImage = "default.gif";
+    var weatherImage = "default.gif";
     if(weatherSummary === "Rain"){
-        weatherImage = weatherSummary;
+        weatherImage = "rain.gif";
     } else if (weatherSummary === "Sunny"){
         weatherImage = "sun.gif";
 
@@ -53,8 +53,8 @@ $scope.getWeatherImage = function(weatherSummary){
 
         } else if (weatherSummary === "Clouds"){
             weatherImage = "cloud.gif";
-    } //  … etc adding else if statements until you get them all…*/
-    return weatherSummary;
+    } //  … etc adding else if statements until you get them all…
+    return weatherImage;
 };
 ///End Weather icons//////////$("input[name*='nation']")   <img ng-src= "images/{{getWeatherImage(prediction.weather[0].main)}}" style="width:80px;">
 
