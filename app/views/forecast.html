@@ -2,7 +2,7 @@
 
 <h1>5-day Forecast for {{forecastData.city.name}} {{forecastData.city.country}}</h1>
 
-<div class="container" style="width:100%">
+<div id="forecast" class="container" style="width:100%">
 <dl class="col-sm-2" ng-repeat="prediction in forecastData.list" class="weather-forecast">
     <dt><span class="smaller">Forecast for</span> {{prediction.dt*1000 | date:'MMM dd, yyyy'}}</dt>
     <!--Start Insert a gif into forecast  -->
