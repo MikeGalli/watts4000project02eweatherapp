@@ -42,17 +42,18 @@ getWeatherImage is looking for a value inside the parenthesis ()
 */
 ///Start Weather icons//////////
 $scope.getWeatherImage = function(weatherSummary){
-    var weatherImage = "default.gif";
-    if(weatherSummary === "Rain"){
-        weatherImage = "rain.gif";
-    } else if (weatherSummary === "Sunny"){
-        weatherImage = "sun.gif";
+    var weatherImage = "default";
 
-      } else if (weatherSummary === "Snow"){
-          weatherImage = "snow.gif";
+    if(weatherSummary == "Rain"){
+        weatherImage = "rain";
+        
+    } else if (weatherSummary == "Sunny"){
+        weatherImage = "sun";
 
-        } else if (weatherSummary === "Clouds"){
-            weatherImage = "cloud.gif";
+      } else if (weatherSummary == "Snow"){
+          weatherImage = "snow";
+
+
     } //  … etc adding else if statements until you get them all…
     return weatherImage;
 };

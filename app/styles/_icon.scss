@@ -11,6 +11,21 @@
   left: 100px;
 }
 
+.weather-image {
+    display: inline-block;
+    height: 80px;
+    width: 80px;
+    background: url('../images/default.gif') center center;
+    &.rain {
+        background: url('../images/rain.gif');
+    }
+    &.clear {
+        background-image: url('../images/clear.gif');
+    }
+    &.snow {
+        background-image: url('../images/snow.gif');
+    }
+}
 .col-sm-2 {
   background-color: rgba(112, 186, 229, .4)
 }

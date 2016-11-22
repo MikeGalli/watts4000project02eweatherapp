@@ -6,7 +6,7 @@
 <dl id="daily" class="col-sm-2" ng-repeat="prediction in forecastData.list" class="weather-forecast">
     <dt><span class="smaller">Forecast for</span> {{prediction.dt*1000 | date:'MMM dd, yyyy'}}</dt>
     <!--Start Insert a gif into forecast  -->
-    <dd class="weatherImage" class="icons"><img ng-src= 'images/{{getWeatherImage(prediction.weather[0].main)}}' style="width:80px;"></dd>
+    <dd><span class="weather-image" ng-class="{{'getWeatherImage(prediction.weather[0].main)'}}"></span></dd>
     <!--END Insert a gif into forecast  -->
 
     <dd>{{prediction.weather[0].main}}</dd>
