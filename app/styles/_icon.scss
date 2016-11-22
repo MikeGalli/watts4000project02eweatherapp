@@ -14,10 +14,10 @@
 .weather-image {
     display: inline-block;
     height: 80px;
-    width: 80px;
-    background: url('../images/default.gif') center center;
+    width: 100px;
+    background-image: url('../images/default.gif') center center;
     &.rain {
-        background: url('../images/rain.gif');
+        background-image: url('../images/rain.gif');
     }
     &.clear {
         background-image: url('../images/clear.gif');
