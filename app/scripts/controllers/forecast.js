@@ -46,9 +46,15 @@ $scope.getWeatherImage = function(weatherSummary){
 
     if(weatherSummary == "Rain"){
         weatherImage = "rain";
-        
+
     } else if (weatherSummary == "Sunny"){
         weatherImage = "sun";
+
+      } else if (weatherSummary == "Clear"){
+          weatherImage = "clear";
+
+        } else if (weatherSummary == "Clouds"){
+            weatherImage = "clouds";
 
       } else if (weatherSummary == "Snow"){
           weatherImage = "snow";
