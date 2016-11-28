@@ -13,7 +13,7 @@ angular.module('watts4000project02eweatherappApp')
   // ...
 
   // Public API here
-  return $resource('http://api.openweathermap.org/data/2.5/find?q=:query&type=like&mode=json&APPID=600ee3b60b8fe48d87def46be2f0e45f', {}, {
+  return $resource('http://api.openweathermap.org/data/2.5/find?q=:query&type=like&mode=json&units=imperial&APPID=600ee3b60b8fe48d87def46be2f0e45f', {}, {
     find: {
       method: 'GET',
       params: {

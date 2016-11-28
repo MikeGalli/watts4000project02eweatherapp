@@ -12,9 +12,9 @@
     <!--END Insert a gif into forecast  -->
 
     <dd>{{prediction.weather[0].main}}</dd>
-    <dd>{{prediction.weather[0].description}}</dd>
+    <!-- <dd>{{prediction.weather[0].description}}</dd>  -->
     <dt>Temperature</dt>
-    <dd>Min: {{prediction.temp.min}} &deg;F Max: {{prediction.temp.max}} &deg;F</dd>
+    <dd><span class="smaller">Min: </span>{{prediction.temp.min}} &deg;F <span class="smaller">Max: </span>{{prediction.temp.max}} &deg;F</dd>
 </dl>
 </div>
 
