@@ -26,11 +26,9 @@ what the value/s may be.
 The HTML reads:  <img ng-src= "images/{{getWeatherImage(prediction.weather[0].main)}}" style="width:80px;">
 Look at the function below. First we're looking for what's in the parenthesis ()
     weatherSummary
-
 The function isn't going to do anything till we call it and we do that in the HTML
 Look at the HTML. What's inside the(), is code that will return data values that we know
 are descriptions of weather: Rain, Clear....
-
 getWeatherImage is looking for a value inside the parenthesis ()
     So... What's in here now? - (prediction.weather[0].main)
     If you look at data from OWM, this value will be Rain or Clear or....
@@ -42,22 +40,22 @@ getWeatherImage is looking for a value inside the parenthesis ()
 */
 ///Start Weather icons//////////
 $scope.getWeatherImage = function(weatherSummary){
-    var weatherImage = "default";
+    var weatherImage = 'default';
 
-    if(weatherSummary == "Rain"){
-        weatherImage = "rain";
+    if(weatherSummary === 'Rain'){
+        weatherImage = 'rain';
 
-    } else if (weatherSummary == "Sunny"){
-        weatherImage = "sun";
+    } else if (weatherSummary === 'Sunny'){
+        weatherImage = 'sun';
 
-      } else if (weatherSummary == "Clear"){
-          weatherImage = "clear";
+      } else if (weatherSummary === 'Clear'){
+          weatherImage = 'clear';
 
-        } else if (weatherSummary == "Clouds"){
-            weatherImage = "clouds";
+        } else if (weatherSummary === 'Clouds'){
+            weatherImage = 'clouds';
 
-      } else if (weatherSummary == "Snow"){
-          weatherImage = "snow";
+      } else if (weatherSummary === 'Snow'){
+          weatherImage = 'snow';
 
 
     } //  … etc adding else if statements until you get them all…
