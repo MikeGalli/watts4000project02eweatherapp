@@ -1,3 +1,17 @@
+<!--<div class="header" class="viewcurrent">
+  <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#/">Home</a></li>
+          <li><a ng-href="#/about">About</a></li>
+          <li><a ng-href="#/current/{{cityID}}">View Current Weather</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>-->
+
 <div id="head" class="container">
   <p>This is the forecast view.</p>
 
@@ -17,14 +31,24 @@
     <dd><span class="smaller">Min: </span>{{prediction.temp.min}} &deg;F <span class="smaller">Max: </span>{{prediction.temp.max}} &deg;F</dd>
 </dl>
 </div>
+pics.length={{pics.photos.photo.length}}
+
+
+
+
 
 <!--Start Flickr Photos//////////////////////////-->
-<div class="row marketing">
+<div ng-if="pics.photos.photo.length>1" class="masonryContaner">
+  <h1>Images of {{forecastData.city.name}}</h1>
+  <div class="masonryContaner" ng-controller="ForecastCtrl">
 
-  <div ng-controller="ForecastCtrl">
-    <h1>Images of {{forecastData.city.name}}</h1>
-    <div class="photos" ng-repeat="photo in pics.photos.photo">
-  <!--              Header?  var
+    <div class="photos" id="masonry" class="container-fluid" ng-repeat="photo in pics.photos.photo">
+  <!--
+      If this is put in the div, it'll show all the data comming from OWM
+      <p ng-if="$index > 0" <h1>{{photo}}</h1>>
+
+      This will show the title & index #
+      <h1> the title is {{photo.title}} {{$index}}</h1>
   -->
       <img ng-src={{photo.url_l}}>
 
@@ -34,4 +58,26 @@
 </div>
 <!--End Flickr Photos//////////////////////////-->
 
-<p><a ng-href="#/current/{{cityID}}" class="btn btn-lg btn-primary">View Current Weather</a></p>
+
+
+  <div id="nav-subnav" class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container-fluid" class="container">
+      <div class="navbar-header">
+
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#js-navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+
+      </div>
+
+      <div class="collapse navbar-collapse" id="js-navbar-collapse">
+
+          <a ng-href="#/current/{{cityID}}" class="btn btn-lg btn-primary">View Current Weatherxxx</a>
+
+
+        </div>
+    </div>
+  </div>

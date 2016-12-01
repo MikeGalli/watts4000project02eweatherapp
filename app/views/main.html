@@ -9,9 +9,9 @@
             <input type="text" name="location" ng-model="location">
           </label>
         </p>
-        <p>
+        <div class="container-fluid">
           <button class="btn btn-lg btn-primary" ng-click="findCities()">Find City</button>
-        </p>
+        </div>
     </div>
     <div ng-if="searchQuery">
       <p class="lead">{{citiesFound.count}} cities found matching the query: {{searchQuery}}.</p>
@@ -25,7 +25,7 @@
     </div>
   </p>
 </div>
-
+<!--
 <div id="savedCities" ng-if="storage.savedCities">
   <h2>Saved Cities</h2>
   <ul class="saved-cities-list">
@@ -34,7 +34,7 @@
     </li>
   </ul>
 </div>
-
+-->
 
   <h4>Karma</h4>
   <p>Spectacular Test Runner for JavaScript.</p>
