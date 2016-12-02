@@ -7,7 +7,7 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 // bower:scss
 @import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
 // endbower
- 
+
 //Start Site Specific Partials
 @import "clouds";
 @import "reset";
@@ -16,8 +16,6 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 @import "transitions";
 @import "icon";
 @import "fonts";
-//@import "clouds";
-@import "masonry";
 @import "forecast";
 
 //End Site Specific Partials
