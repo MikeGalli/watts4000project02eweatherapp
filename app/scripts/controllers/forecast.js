@@ -50,14 +50,7 @@ $scope.getWeatherImage = function(weatherSummary){
           tags: data.list[3].weather.description // Note: This will also need to be pathed correctly in the forecastData
       });
 
-      $scope.blahblah = pics.query({
-          picblahblah: $scope.photo.url_l
-      });
-      //var z="";
-      if ($scope.photo !==""){
-        z= ('QWERTY');
-      }
-      return z;
+
 
 
   });
