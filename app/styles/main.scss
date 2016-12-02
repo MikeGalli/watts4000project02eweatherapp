@@ -9,13 +9,14 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 // endbower
 
 //Start Site Specific Partials
+@import "clouds";
 @import "reset";
 @import "buttons";
 @import "body";
 @import "transitions";
 @import "icon";
 @import "fonts";
-@import "clouds";
+//@import "clouds";
 @import "masonry";
 @import "forecast";
 
