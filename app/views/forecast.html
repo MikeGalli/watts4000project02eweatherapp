@@ -15,11 +15,11 @@
 <div id="head" class="container">
   <p>This is the forecast view.</p>
 
-<h1>5-day Forecast for {{forecastData.city.name}} {{forecastData.city.country}}</h1>
+  <h1>5-day Forecast for {{forecastData.city.name}} {{forecastData.city.country}}</h1>
 </div>
 
 <div id="forecast" class="container" style="width:100%">
-<dl id="daily" class="col-sm-2" ng-repeat="prediction in forecastData.list" class="weather-forecast">
+  <dl id="daily" class="col-sm-2" ng-repeat="prediction in forecastData.list" class="weather-forecast">
     <dt><span class="smaller">Forecast for</span> {{prediction.dt*1000 | date:'MMM dd, yyyy'}}</dt>
     <!--Start Insert a gif into forecast  -->
     <dd><span class="weather-image" ng-class="{{'getWeatherImage(prediction.weather[0].main)'}}"></span></dd>
@@ -29,7 +29,7 @@
     <!-- <dd>{{prediction.weather[0].description}}</dd>  -->
     <dt>Temperature</dt>
     <dd><span class="smaller">Min: </span>{{prediction.temp.min}} &deg;F <span class="smaller">Max: </span>{{prediction.temp.max}} &deg;F</dd>
-</dl>
+  </dl>
 </div>
 pics.length={{pics.photos.photo.length}}
 
@@ -43,7 +43,7 @@ pics.length={{pics.photos.photo.length}}
   <div class="masonryContaner" ng-controller="ForecastCtrl">
 
     <div class="photos" id="masonry" class="container-fluid" ng-repeat="photo in pics.photos.photo">
-  <!--
+      <!--
       If this is put in the div, it'll show all the data comming from OWM
       <p ng-if="$index > 0" <h1>{{photo}}</h1>>
 
@@ -60,24 +60,24 @@ pics.length={{pics.photos.photo.length}}
 
 
 
-  <div id="nav-subnav" class="navbar navbar-default navbar-fixed-top" role="navigation">
-    <div class="container-fluid" class="container">
-      <div class="navbar-header">
+<div id="nav-subnav" class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container-fluid" class="container">
+    <div class="navbar-header">
 
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#js-navbar-collapse">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#js-navbar-collapse">
           <span class="sr-only">Toggle navigation</span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
 
-      </div>
+    </div>
 
-      <div class="collapse navbar-collapse" id="js-navbar-collapse">
+    <div class="collapse navbar-collapse" id="js-navbar-collapse">
 
-          <a ng-href="#/current/{{cityID}}" class="btn btn-lg btn-primary">View Current Weather</a>
+      <a ng-href="#/current/{{cityID}}" class="btn btn-lg btn-primary">View Current Weather</a>
 
 
-        </div>
     </div>
   </div>
+</div>

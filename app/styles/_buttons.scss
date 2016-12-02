@@ -1,126 +1,110 @@
 /*  Start NEW Nav Buttons  */
-    #nav {
-      //margin-left: 30px;
-      //margin-right: 30px;
-      padding-top: 10px;
-      padding-left: 5%;
-      //padding-right: 30px;
-    }
-     .container-fluid {
-       align-self: flex-end;
-       order: 5;
-       margin: auto;
-     /* 	background-color: lightskyblue; */
-     }
-     .container-fluid a{
-                     font-family: helvetica, arial, sans-serif;
-                     font-size:1.5vw;
-                     /*letter-spacing: 1px;*/
-                     text-transform: capitalize;
-                     line-height:30px;
-                     height:30px;
-                     color:black;
-                     cursor:pointer;
-                     display: inline-block;
-                     width:auto;
-                     text-decoration:none !important;
+#nav {
+  //margin-left: 30px;
+  //margin-right: 30px;
+  padding-top: 10px;
+  padding-left: 5%;
+  //padding-right: 30px;
+}
 
-                     position: static;
-                     /* these rules for the button press effect */
-                     padding-top:1px;
-                     padding-bottom:2px;
+.container-fluid {
+  align-self: flex-end;
+  order: 5;
+  margin: auto;
+  /* 	background-color: lightskyblue; */
+}
 
-                     margin-top:-1px;
-                     margin-bottom:1px;
+.container-fluid a {
+  font-family: helvetica, arial, sans-serif;
+  font-size: 1.5vw;
+  /*letter-spacing: 1px;*/
+  text-transform: capitalize;
+  line-height: 30px;
+  height: 30px;
+  color: black;
+  cursor: pointer;
+  display: inline-block;
+  width: auto;
+  text-decoration: none !important;
+  position: static;
+  /* these rules for the button press effect */
+  padding-top: 1px;
+  padding-bottom: 2px;
+  margin-top: -1px;
+  margin-bottom: 1px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: -1px;
+  margin-right: 1px;
+  /* default background-color */
+  background-color: #5064fb;
+  /* the mighty gradient */
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(255, 255, 255, 0.6)), color-stop(0.49, rgba(255, 255, 255, 0.3)), color-stop(0.51, rgba(255, 255, 255, 0.0)), to(rgba(255, 255, 255, 0.2)));
+  /* Chrome,Safari4+ */
+  background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.3) 50%, rgba(255, 255, 255, 0.0) 51%, rgba(255, 255, 255, 0.2) 100%);
+  /* FF3.6+ */
+  background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.3) 50%, rgba(255, 255, 255, 0.0) 51%, rgba(255, 255, 255, 0.2) 100%);
+  /* Opera11.10+ */
+  background-image: linear-gradient(top, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.3) 50%, rgba(255, 255, 255, 0.0) 51%, rgba(255, 255, 255, 0.2) 100%);
+  /* W3C */
+  /* some nice roundy corners */
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  /* for links in chrome */
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  /* a very subtle drop-shadow that ehances the pressed button effect */
+  -webkit-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.30);
+  -moz-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.30);
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.30);
+  /* remove any inherited or default borders - especially important for the <button> element*/
+  border: 0 !important;
+  /* a subtle text inset effect which will also help to enhance the pressed button effect */
+  text-shadow: rgba(255, 255, 255, 0.1) -1px 0, rgba(0, 0, 0, 0.3) 1px 1px;
+  /* and of course a little animated background-color fade effect */
+  -webkit-transition: background-color 0.3s ease;
+  -moz-transition: background-color 0.3s ease;
+  -o-transition: background-color 0.3s ease;
+  -ms-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
+}
+/* submit and reset buttons */
+input.glossy-button {
+  vertical-align: middle;
+  line-height: normal !important;
+  padding-bottom: 0;
+}
+/* remove ugly dotted border */
+:focus {
+  outline: none;
+}
 
-                     padding-left:10px;
-                     padding-right:10px;
+::-moz-focus-inner {
+  border: 0;
+}
 
-                     margin-left:-1px;
-                     margin-right:1px;
+.container-fluid a:hover {
+  background-color: #59b606;
+}
 
-                     /* default background-color */
-
-                     background-color: #5064fb;
-
-                     /* the mighty gradient */
-
-                     background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(255, 255, 255, 0.6)), color-stop(0.49, rgba(255, 255, 255, 0.3)), color-stop(0.51, rgba(255, 255, 255, 0.0)), to(rgba(255, 255, 255, 0.2))); /* Chrome,Safari4+ */
-                     background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.3) 50%, rgba(255, 255, 255, 0.0) 51%, rgba(255, 255, 255, 0.2) 100%); /* FF3.6+ */
-                     background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.3) 50%, rgba(255, 255, 255, 0.0) 51%, rgba(255, 255, 255, 0.2) 100%); /* Opera11.10+ */
-                     background-image: linear-gradient(top, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.3) 50%, rgba(255, 255, 255, 0.0) 51%, rgba(255, 255, 255, 0.2) 100%); /* W3C */
-
-
-                     /* some nice roundy corners */
-                     -webkit-border-radius: 10px;
-                     -moz-border-radius: 10px;
-                     -o-border-radius: 10px;
-                     border-radius: 10px;
-
-                     /* for links in chrome */
-                      -webkit-box-sizing: border-box;
-                     -moz-box-sizing: border-box;
-                     -o-box-sizing: border-box;
-                     box-sizing: border-box;
-
-
-                     /* a very subtle drop-shadow that ehances the pressed button effect */
-                     -webkit-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.30);
-                     -moz-box-shadow:    1px 1px 3px rgba(0, 0, 0, 0.30);
-                     box-shadow:         1px 1px 3px rgba(0, 0, 0, 0.30);
-
-                     /* remove any inherited or default borders - especially important for the <button> element*/
-                      border: 0 !important;
-
-                     /* a subtle text inset effect which will also help to enhance the pressed button effect */
-                      text-shadow:  rgba(255, 255, 255, 0.1) -1px 0, rgba(0, 0, 0, 0.3) 1px 1px;
-
-
-                     /* and of course a little animated background-color fade effect */
-
-                     -webkit-transition: background-color 0.3s ease;
-                     -moz-transition: background-color 0.3s ease;
-                     -o-transition: background-color 0.3s ease;
-                     -ms-transition: background-color 0.3s ease;
-                     transition: background-color 0.3s ease;
-
-                 }
-     /* submit and reset buttons */
-                  input.glossy-button{
-                     vertical-align: middle;
-                     line-height: normal !important;
-                     padding-bottom: 0;
-                 }
-     /* remove ugly dotted border */
-                 :focus{
-                     outline:none;
-                 }
-                 ::-moz-focus-inner{
-                     border:0;
-     }
-     .container-fluid a:hover{
-       background-color: #59b606;
-     }
-     .container-fluid a:active{
-                     background-color: #333333;
-                     border-color: #333333;
-                     color:#eeeeee;
-
-                     padding-top:0;
-                     padding-bottom:0;
-
-                     margin-top:0;
-                     margin-bottom:0;
-
-                     padding-left:10px;
-                     padding-right:10px;
-
-                     margin-left:0;
-                     margin-right:0;
-
-                     box-shadow: none;
-
-                     text-shadow: rgba(0, 0, 0, 0.4) 0 -1px, rgba(255, 255, 255, 0.3) 0 1px;
-                     color:rgba(255, 255, 255, 0.9);
-     }
-     /*  End NEW Nav Buttons  */
+.container-fluid a:active {
+  background-color: #333333;
+  border-color: #333333;
+  color: #eeeeee;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: 0;
+  margin-right: 0;
+  box-shadow: none;
+  text-shadow: rgba(0, 0, 0, 0.4) 0 -1px, rgba(255, 255, 255, 0.3) 0 1px;
+  color: rgba(255, 255, 255, 0.9);
+}
+/*  End NEW Nav Buttons  */

@@ -20,7 +20,7 @@ angular
     'ngStorage', // added to enable localStorage features
     'ngTouch'
   ])
-  .config(function ($routeProvider) {
+  .config(function($routeProvider) {
     $routeProvider
       .when('/', {
         templateUrl: 'views/main.html',

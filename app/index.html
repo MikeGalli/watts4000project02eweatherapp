@@ -1,53 +1,56 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width">
-    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-    <!-- build:css(.) styles/vendor.css -->
-    <!-- bower:css -->
-    <link rel="stylesheet" href="bower_components/animate.css/animate.css" />
-    <!-- endbower -->
-    <!-- endbuild -->
-    <!-- build:css(.tmp) styles/main.css -->
-    <link rel="stylesheet" href="styles/main.css">
-    <!-- endbuild -->
-  </head>
-  <body ng-app="watts4000project02eweatherappApp">
-  <div ng-app class="body" ng-controller="MainCtrl">
-<!--///////Start Sky Animation//////////////////////////////////////////-->
-<!--///////Start Sky Animation//////////////////////////////////////////-->
 
-  <meta charset="UTF-8">
-  <title>CSS3 Animated Clouds</title>
-  <script src="http://s.codepen.io/assets/libs/modernizr.js" type="text/javascript"></script>
-
-
-
-
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
-
-
-<body>
-  <head>
-  <meta charset='UTF-8'>
-  <title>CSS3 Cloud Animations By Montana Flynn</title>
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width">
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+  <!-- build:css(.) styles/vendor.css -->
+  <!-- bower:css -->
+  <link rel="stylesheet" href="bower_components/animate.css/animate.css" />
+  <!-- endbower -->
+  <!-- endbuild -->
+  <!-- build:css(.tmp) styles/main.css -->
+  <link rel="stylesheet" href="styles/main.css">
+  <!-- endbuild -->
 </head>
 
-<body>
-  <div class="sky">
-    <div class="moon"></div>
-    <div class="clouds_one"></div>
-    <div class="clouds_two"></div>
-    <div class="clouds_three"></div>
-  </div>
-</body>
+<body ng-app="watts4000project02eweatherappApp">
+  <div ng-app class="body" ng-controller="MainCtrl">
+    <!--///////Start Sky Animation//////////////////////////////////////////-->
+    <!--///////Start Sky Animation//////////////////////////////////////////-->
+
+    <meta charset="UTF-8">
+    <title>CSS3 Animated Clouds</title>
+    <script src="http://s.codepen.io/assets/libs/modernizr.js" type="text/javascript"></script>
 
 
-</body>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+
+
+    <body>
+
+      <head>
+        <meta charset='UTF-8'>
+        <title>CSS3 Cloud Animations By Montana Flynn</title>
+      </head>
+
+      <body>
+        <div class="sky">
+          <div class="moon"></div>
+          <div class="clouds_one"></div>
+          <div class="clouds_two"></div>
+          <div class="clouds_three"></div>
+        </div>
+      </body>
+
+
+    </body>
 
     <!--[if lte IE 8]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
@@ -79,18 +82,18 @@
               <li class="dropdown">
                 <a class="dropdown-toggle" data-toggle="dropdown" href="#">Your Saved Cities
                         <span class="caret"></span></a>
-                        <ul class="dropdown-menu saved-cities-list">
-                          <li ng-repeat="city in storage.savedCities">
-                            <a ng-href="#/current/{{city.id}}" class="dropdown-toggle">{{city.name}}</a>
-                          </li>
-                        </ul>
-            </div>
+                <ul class="dropdown-menu saved-cities-list">
+                  <li ng-repeat="city in storage.savedCities">
+                    <a ng-href="#/current/{{city.id}}" class="dropdown-toggle">{{city.name}}</a>
+                  </li>
+                </ul>
+          </div>
         </div>
       </div>
     </div>
 
     <div class="container">
-    <div ng-view=""></div>
+      <div ng-view=""></div>
     </div>
 
     <div class="footer">
@@ -99,45 +102,48 @@
       </div>
     </div>
 
-</div>
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
-     <script>
-       !function(A,n,g,u,l,a,r){A.GoogleAnalyticsObject=l,A[l]=A[l]||function(){
-       (A[l].q=A[l].q||[]).push(arguments)},A[l].l=+new Date,a=n.createElement(g),
-       r=n.getElementsByTagName(g)[0],a.src=u,r.parentNode.insertBefore(a,r)
-       }(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  </div>
+  <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+  <script>
+    ! function(A, n, g, u, l, a, r) {
+      A.GoogleAnalyticsObject = l, A[l] = A[l] || function() {
+          (A[l].q = A[l].q || []).push(arguments)
+        }, A[l].l = +new Date, a = n.createElement(g),
+        r = n.getElementsByTagName(g)[0], a.src = u, r.parentNode.insertBefore(a, r)
+    }(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
-       ga('create', 'UA-XXXXX-X');
-       ga('send', 'pageview');
-    </script>
+    ga('create', 'UA-XXXXX-X');
+    ga('send', 'pageview');
+  </script>
 
-    <!-- build:js(.) scripts/vendor.js -->
-    <!-- bower:js -->
-    <script src="bower_components/jquery/dist/jquery.js"></script>
-    <script src="bower_components/angular/angular.js"></script>
-    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap.js"></script>
-    <script src="bower_components/angular-animate/angular-animate.js"></script>
-    <script src="bower_components/angular-aria/angular-aria.js"></script>
-    <script src="bower_components/angular-cookies/angular-cookies.js"></script>
-    <script src="bower_components/angular-messages/angular-messages.js"></script>
-    <script src="bower_components/angular-resource/angular-resource.js"></script>
-    <script src="bower_components/angular-route/angular-route.js"></script>
-    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
-    <script src="bower_components/angular-touch/angular-touch.js"></script>
-    <script src="bower_components/ngstorage/ngStorage.js"></script>
-    <!-- endbower -->
-    <!-- endbuild -->
+  <!-- build:js(.) scripts/vendor.js -->
+  <!-- bower:js -->
+  <script src="bower_components/jquery/dist/jquery.js"></script>
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap.js"></script>
+  <script src="bower_components/angular-animate/angular-animate.js"></script>
+  <script src="bower_components/angular-aria/angular-aria.js"></script>
+  <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+  <script src="bower_components/angular-messages/angular-messages.js"></script>
+  <script src="bower_components/angular-resource/angular-resource.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+  <script src="bower_components/angular-touch/angular-touch.js"></script>
+  <script src="bower_components/ngstorage/ngStorage.js"></script>
+  <!-- endbower -->
+  <!-- endbuild -->
 
-        <!-- build:js({.tmp,app}) scripts/scripts.js -->
-        <script src="scripts/app.js"></script>
-        <script src="scripts/controllers/main.js"></script>
-        <script src="scripts/controllers/about.js"></script>
-        <script src="scripts/services/current.js"></script>
-        <script src="scripts/services/citysearch.js"></script>
-        <script src="scripts/controllers/current.js"></script>
-        <script src="scripts/services/forecast.js"></script>
-        <script src="scripts/controllers/forecast.js"></script>
-        <script src="scripts/services/pics.js"></script>
-        <!-- endbuild -->
+  <!-- build:js({.tmp,app}) scripts/scripts.js -->
+  <script src="scripts/app.js"></script>
+  <script src="scripts/controllers/main.js"></script>
+  <script src="scripts/controllers/about.js"></script>
+  <script src="scripts/services/current.js"></script>
+  <script src="scripts/services/citysearch.js"></script>
+  <script src="scripts/controllers/current.js"></script>
+  <script src="scripts/services/forecast.js"></script>
+  <script src="scripts/controllers/forecast.js"></script>
+  <script src="scripts/services/pics.js"></script>
+  <!-- endbuild -->
 </body>
+
 </html>

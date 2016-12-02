@@ -1,14 +1,16 @@
 //.icons {
-    //height: 200px;
+//height: 200px;
 //    width: 80px;
 //    background-color: powderblue;
 //}
+
 .viewcurrent {
   //height: 100%;
   position: absolute;
   //top: 225px;
   left: 50%;
 }
+
 #head {
   width: 100%;
   //height: 100%;
@@ -26,34 +28,40 @@
 }
 
 .weather-image {
-    display: inline-block;
-    height: 80px;
-    width: 100px;
-    border-radius: 25px;
-    border: 5px solid rgba(52, 22, 114, .5);
-    
-    background-image: url('../images/default.gif') center center;
-    &.rain {
-        background-image: url('../images/rain.gif');
-    }
-    &.clear {
-        background-image: url('../images/clear.gif');
-    }
-    &.clouds {
-        background-image: url('../images/clouds.gif');
-    }
-    &.snow {
-        background-image: url('../images/snow.gif');
-    }
+  display: inline-block;
+  height: 80px;
+  width: 100px;
+  border-radius: 25px;
+  border: 5px solid rgba(52, 22, 114, .5);
+  background-image: url('../images/default.gif') center center;
+
+  &.rain {
+    background-image: url('../images/rain.gif');
+  }
+
+  &.clear {
+    background-image: url('../images/clear.gif');
+  }
+
+  &.clouds {
+    background-image: url('../images/clouds.gif');
+  }
+
+  &.snow {
+    background-image: url('../images/snow.gif');
+  }
 }
+
 .col-sm-2 {
-  background-color: rgba(112, 186, 229, .6)
+  background-color: rgba(112, 186, 229, .6);
 }
+
 .icons {
   background-clip: content-box;
   border-radius: 25px;
   border: 5px solid rgba(52, 22, 114, .5);
 }
+
 #daily {
   width: 16%;
   border-radius: 25px;

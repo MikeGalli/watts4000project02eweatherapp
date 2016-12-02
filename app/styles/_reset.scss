@@ -1,75 +1,101 @@
 /* foundation/reset  foundation/reset  foundation/reset */
 html {
- margin: 0;
- padding: 0;
- -ms-text-size-adjust: 100%;
- -webkit-text-size-adjust: 100%;
+  margin: 0;
+  padding: 0;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
 }
+
 body {
- margin: 0;
- font: 16px/1 sans-serif;
- -moz-osx-font-smoothing: grayscale;
- -webkit-font-smoothing: antialiased;
+  margin: 0;
+  font: 16px/1 sans-serif;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
 }
 /* h1, */
-h2, h3, h4, p, blockquote, figure, ol, ul {
- margin: 0;
- padding: 0;
+blockquote,
+figure,
+h2,
+h3,
+h4,
+ol,
+p,
+ul {
+  margin: 0;
+  padding: 0;
 }
-main, li {
- display: block;
+
+li,
+main {
+  display: block;
 }
-h1, h2, h3, h4 {
- font-size: inherit;
+
+h1,
+h2,
+h3,
+h4 {
+  font-size: inherit;
 }
+
 strong {
-/* 	font-weight: bold; */
+  /* 	font-weight: bold; */
 }
-a, button {
- color: inherit;
- transition: .3s;
-}
-a {
- text-decoration: none;
-}
+
+a,
 button {
- overflow: visible;
- border: 0;
- font: inherit;
- -webkit-font-smoothing: inherit;
- letter-spacing: inherit;
- background: none;
- cursor: pointer;
+  color: inherit;
+  transition: 0.3s;
 }
+
+a {
+  text-decoration: none;
+}
+
+button {
+  overflow: visible;
+  border: 0;
+  font: inherit;
+  -webkit-font-smoothing: inherit;
+  letter-spacing: inherit;
+  background: none;
+  cursor: pointer;
+}
+
 ::-moz-focus-inner {
- padding: 0;
- border: 0;
+  padding: 0;
+  border: 0;
 }
+
 :focus {
- outline: 0;
+  outline: 0;
 }
+
 img {
- max-width: 100%;
- height: auto;
- border: 0;
+  max-width: 100%;
+  height: auto;
+  border: 0;
 }
 /*Start CSS*/
-
 /* Basic Elements */
 a:link {
-/* 	font-weight: bold; */
- text-decoration: none;
- color: #250033;
+  /* 	font-weight: bold; */
+  text-decoration: none;
+  color: #250033;
 }
+
 a:visited {
-/* 	font-weight: bold; */
- text-decoration: none;
- color: #DC4DDC;
+  /* 	font-weight: bold; */
+  text-decoration: none;
+  color: #DC4DDC;
 }
-a:hover, a:focus, a:active {
- text-decoration: underline;
+
+a:active,
+a:focus,
+a:hover {
+  text-decoration: underline;
 }
+
 abbr {
- border-bottom: none;
+  border-bottom: none;
 }
 /* foundation/reset  foundation/reset  foundation/reset */

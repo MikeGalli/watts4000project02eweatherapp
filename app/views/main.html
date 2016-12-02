@@ -1,17 +1,16 @@
-
 <h3>This is main view</h3>
 <div ng-app class="jumbotron" ng-controller="MainCtrl">
   <h1>Select Your City</h1>
   <p class="lead">
     <div ng-init="location='Seattle'">
-        <p>
-          <label for="location">Location:
+      <p>
+        <label for="location">Location:
             <input type="text" name="location" ng-model="location">
           </label>
-        </p>
-        <div class="container-fluid">
-          <button class="btn btn-lg btn-primary" ng-click="findCities()">Find City</button>
-        </div>
+      </p>
+      <div class="container-fluid">
+        <button class="btn btn-lg btn-primary" ng-click="findCities()">Find City</button>
+      </div>
     </div>
     <div ng-if="searchQuery">
       <p class="lead">{{citiesFound.count}} cities found matching the query: {{searchQuery}}.</p>
@@ -36,6 +35,6 @@
 </div>
 -->
 
-  <h4>Karma</h4>
-  <p>Spectacular Test Runner for JavaScript.</p>
+<h4>Karma</h4>
+<p>Spectacular Test Runner for JavaScript.</p>
 </div>

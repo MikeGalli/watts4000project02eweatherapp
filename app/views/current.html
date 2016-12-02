@@ -1,10 +1,10 @@
 <div id="head" class="container">
-<p>This is the current view.</p>
+  <p>This is the current view.</p>
 
-<h1>Current Weather for {{currentWeather.name}}</h1>
+  <h1>Current Weather for {{currentWeather.name}}</h1>
 
 
-<dl>
+  <dl>
     <dt>Currently</dt>
     <dd>{{currentWeather.weather[0].main}}</dd>
     <dd>{{currentWeather.weather[0].description}}</dd>
@@ -14,17 +14,17 @@
     <dd>{{currentWeather.wind.speed}} mph at {{currentWeather.wind.deg}} &deg;</dd>
     <dt>Clouds</dt>
     <dd>{{currentWeather.clouds.all}}%</dd>
-</dl>
-<div class="container-fluid">
-<p><a ng-href="#/forecast/{{cityID}}" class="btn btn-lg btn-primary">View 5-day Forecast</a></p>
-<p><button class="btn btn-sm btn-primary" ng-click="saveCity(currentWeather)">Save City</button></p>
-</div>
-<div ng-messages="citySaved">
+  </dl>
+  <div class="container-fluid">
+    <p><a ng-href="#/forecast/{{cityID}}" class="btn btn-lg btn-primary">View 5-day Forecast</a></p>
+    <p><button class="btn btn-sm btn-primary" ng-click="saveCity(currentWeather)">Save City</button></p>
+  </div>
+  <div ng-messages="citySaved">
     <p class="city-saved-alert bg-success text-success" ng-message="success">
-        {{currentWeather.name}} has been saved to your list of cities.
+      {{currentWeather.name}} has been saved to your list of cities.
     </p>
     <p class="city-saved-alert bg-warning text-warning" ng-message="duplicate">
-        {{currentWeather.name}} has already been saved to your list of cities.
+      {{currentWeather.name}} has already been saved to your list of cities.
     </p>
-</div>
+  </div>
 </div>
