@@ -1,13 +1,7 @@
-
 //Start Override Bootstrap Variables
-@import "variables";
-//End Override Bootstrap Variables
-
-$icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
-// bower:scss
-@import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
-// endbower
-
+@import "variables"; //End Override Bootstrap Variables
+$icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/"; // bower:scss
+@import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss"; // endbower
 //Start Site Specific Partials
 @import "clouds";
 @import "reset";
@@ -17,10 +11,7 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 @import "icon";
 @import "fonts";
 @import "forecast";
-
 //End Site Specific Partials
-
-
 ///////Start Sky Animation//////////////////////////////////////////
 ///////Start Sky Animation//////////////////////////////////////////
 ////////////////////////////Don't need it. I think.
