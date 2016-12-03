@@ -1,3 +1,5 @@
+<!doctype html>
+<html>
 <!--<div class="header" class="viewcurrent">
   <div class="navbar navbar-default navbar-fixed-top" role="navigation">
     <div class="container">
@@ -19,7 +21,7 @@
 </div>
 
 <div id="forecast" class="container" style="width:100%">
-  <dl id="daily" class="col-sm-2" ng-repeat="prediction in forecastData.list" class="weather-forecast">
+  <dl id="daily" class="col-sm-2" ng-repeat="prediction in forecastData.list">
     <dt><span class="smaller">Forecast for</span> {{prediction.dt*1000 | date:'MMM dd, yyyy'}}</dt>
     <!--Start Insert a gif into forecast  -->
     <dd><span class="weather-image" ng-class="{{'getWeatherImage(prediction.weather[0].main)'}}"></span></dd>
@@ -42,7 +44,7 @@ pics.length={{pics.photos.photo.length}}
   <h1>Images of {{forecastData.city.name}}</h1>
   <div class="masonryContaner" ng-controller="ForecastCtrl">
 
-    <div class="photos" id="masonry" class="container-fluid" ng-repeat="photo in pics.photos.photo">
+    <div class="photos" id="masonry" ng-repeat="photo in pics.photos.photo">
       <!--
       If this is put in the div, it'll show all the data comming from OWM
       <p ng-if="$index > 0" <h1>{{photo}}</h1>>
@@ -50,7 +52,7 @@ pics.length={{pics.photos.photo.length}}
       This will show the title & index #
       <h1> the title is {{photo.title}} {{$index}}</h1>
   -->
-      <img ng-src={{photo.url_l}}>
+      <img ng-src="{{photo.url_l}}">
 
     </div>
   </div>
@@ -60,8 +62,8 @@ pics.length={{pics.photos.photo.length}}
 
 
 
-<div id="nav-subnav" class="navbar navbar-default navbar-fixed-top" role="navigation">
-  <div class="container-fluid" class="container">
+<div id="nav-subnav" class="navbar navbar-default sub-nav" role="navigation">
+  <div class="container-fluid my-buttons">
     <div class="navbar-header">
 
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#js-navbar-collapse">
@@ -76,8 +78,8 @@ pics.length={{pics.photos.photo.length}}
     <div class="collapse navbar-collapse" id="js-navbar-collapse">
 
       <a ng-href="#/current/{{cityID}}" class="btn btn-lg btn-primary">View Current Weather</a>
-
-
     </div>
   </div>
 </div>
+
+</html>

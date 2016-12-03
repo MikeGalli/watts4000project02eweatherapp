@@ -2,19 +2,24 @@
 #nav {
   //margin-left: 30px;
   //margin-right: 30px;
-  padding-top: 10px;
+  //padding-top: 10px;
   padding-left: 5%;
   //padding-right: 30px;
 }
-
-.container-fluid {
+.sub-nav {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+}
+.my-buttons {
   align-self: flex-end;
   order: 5;
   margin: auto;
   /* 	background-color: lightskyblue; */
 }
 
-.container-fluid a {
+.my-buttons a {
   font-family: helvetica, arial, sans-serif;
   font-size: 1.5vw;
   /*letter-spacing: 1px;*/
@@ -32,10 +37,10 @@
   padding-bottom: 2px;
   margin-top: -1px;
   margin-bottom: 1px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
   margin-left: -1px;
-  margin-right: 1px;
+  margin-right: 0;
   /* default background-color */
   background-color: #5064fb;
   /* the mighty gradient */
@@ -87,11 +92,11 @@ input.glossy-button {
   border: 0;
 }
 
-.container-fluid a:hover {
+.my-buttons a:hover {
   background-color: #59b606;
 }
 
-.container-fluid a:active {
+.my-buttons a:active {
   background-color: #333333;
   border-color: #333333;
   color: #eeeeee;

@@ -11,9 +11,5 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 @import "transitions";
 @import "icon";
 @import "fonts";
-@import "forecast"; //End Site Specific Partials
-///////Start Sky Animation//////////////////////////////////////////
-///////Start Sky Animation//////////////////////////////////////////
-////////////////////////////Don't need it. I think.
-///////End Sky Animation//////////////////////////////////////////
-///////End Sky Animation//////////////////////////////////////////
+@import "forecast";
+//End Site Specific Partials

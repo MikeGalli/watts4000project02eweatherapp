@@ -1,3 +1,6 @@
+<!doctype html>
+<html>
+
 <div id="head" class="container">
   <p>This is the current view.</p>
 
@@ -15,7 +18,7 @@
     <dt>Clouds</dt>
     <dd>{{currentWeather.clouds.all}}%</dd>
   </dl>
-  <div class="container-fluid">
+  <div class="container-fluid my-buttons">
     <p><a ng-href="#/forecast/{{cityID}}" class="btn btn-lg btn-primary">View 5-day Forecast</a></p>
     <p><button class="btn btn-sm btn-primary" ng-click="saveCity(currentWeather)">Save City</button></p>
   </div>
@@ -28,3 +31,5 @@
     </p>
   </div>
 </div>
+
+</html>
