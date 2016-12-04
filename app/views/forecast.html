@@ -1,18 +1,6 @@
 <!doctype html>
 <html>
-<!--<div class="header" class="viewcurrent">
-  <div class="navbar navbar-default navbar-fixed-top" role="navigation">
-    <div class="container">
-      <div class="navbar-header">
-        <ul class="nav navbar-nav">
-          <li class="active"><a href="#/">Home</a></li>
-          <li><a ng-href="#/about">About</a></li>
-          <li><a ng-href="#/current/{{cityID}}">View Current Weather</a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</div>-->
+
 
 <div id="head" class="container">
   <p>This is the forecast view.</p>
@@ -30,13 +18,10 @@
     <dd>{{prediction.weather[0].main}}</dd>
     <!-- <dd>{{prediction.weather[0].description}}</dd>  -->
     <dt>Temperature</dt>
-    <dd><span class="smaller">Min: </span>{{prediction.temp.min}} &deg;F <span class="smaller">Max: </span>{{prediction.temp.max}} &deg;F</dd>
+    <dd><span class="smaller">Min: </span>{{prediction.temp.min}}&deg;F <span class="smaller">Max: </span>{{prediction.temp.max}}&deg;F</dd>
   </dl>
 </div>
 pics.length={{pics.photos.photo.length}}
-
-
-
 
 
 <!--Start Flickr Photos//////////////////////////-->

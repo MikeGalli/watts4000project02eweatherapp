@@ -6,16 +6,23 @@
   padding-left: 5%;
   //padding-right: 30px;
 }
+
+#nav-subnav {
+  width: auto;
+  z-index: 1;
+}
+
 .sub-nav {
   position: fixed;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 50px;
   z-index: -1;
 }
+
 .my-buttons {
   align-self: flex-end;
   order: 5;
-  margin: auto;
+  margin-top: 7px;
   /* 	background-color: lightskyblue; */
 }
 
