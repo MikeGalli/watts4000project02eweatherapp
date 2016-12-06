@@ -1,7 +1,6 @@
 <!doctype html>
 <html>
 
-
 <div id="head" class="container">
   <p>This is the forecast view.</p>
 
@@ -11,6 +10,7 @@
 <div id="forecast" class="container" style="width:100%">
   <dl id="daily" class="col-sm-2" ng-repeat="prediction in forecastData.list">
     <dt><span class="smaller">Forecast for</span> {{prediction.dt*1000 | date:'MMM dd, yyyy'}}</dt>
+
     <!--Start Insert a gif into forecast  -->
     <dd><span class="weather-image" ng-class="{{'getWeatherImage(prediction.weather[0].main)'}}"></span></dd>
     <!--END Insert a gif into forecast  -->
@@ -21,27 +21,17 @@
     <dd><span class="smaller">Min: </span>{{prediction.temp.min}}&deg;F <span class="smaller">Max: </span>{{prediction.temp.max}}&deg;F</dd>
   </dl>
 </div>
-pics.length={{pics.photos.photo.length}}
+The number of photos shown is, {{pics.photos.photo.length}}
 
 
 <!--Start Flickr Photos//////////////////////////-->
 <div ng-if="pics.photos.photo.length>1" class="masonryContaner">
   <h1>Images of {{forecastData.city.name}}</h1>
   <div class="masonryContaner" ng-controller="ForecastCtrl">
-
     <div class="photos" id="masonry" ng-repeat="photo in pics.photos.photo">
-      <!--
-      If this is put in the div, it'll show all the data comming from OWM
-      <p ng-if="$index > 0" <h1>{{photo}}</h1>>
-
-      This will show the title & index #
-      <h1> the title is {{photo.title}} {{$index}}</h1>
-  -->
       <img ng-src="{{photo.url_l}}">
-
     </div>
   </div>
-
 </div>
 <!--End Flickr Photos//////////////////////////-->
 
