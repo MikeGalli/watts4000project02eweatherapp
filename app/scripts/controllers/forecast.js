@@ -14,7 +14,7 @@ angular.module('watts4000project02eweatherappApp')
     $scope.forecastData = forecast.query({
       cityID: $scope.cityID
     });
-
+ 
     ///Start Weather icons//////////
     $scope.getWeatherImage = function(weatherSummary) {
       var weatherImage = 'default';
