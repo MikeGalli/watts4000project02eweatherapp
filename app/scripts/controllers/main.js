@@ -19,3 +19,4 @@ angular.module('watts4000project02eweatherappApp')
       $scope.searchQuery = $scope.location;
     };
   });
+  
