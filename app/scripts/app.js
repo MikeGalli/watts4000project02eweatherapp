@@ -7,12 +7,20 @@
  * # watts4000project02eweatherappApp
  *
  * Main module of the application.
+ Step 1 Browser reads compiled version of index.html
+ Step 2 Browser looks here.
+        What kind of app is this? --angular
+        What objects does it have? --ngAnimate, ngAria....
  */
+ 
+/* this refers to angular object from index.html
+      <script src="bower_components/angular/angular.js"></script> */
 angular
   .module('watts4000project02eweatherappApp', [
+    //'angularGrid',
     'ngAnimate',
     'ngAria',
-    'ngCookies',
+    'ngCookies',  //Among the Angular modules we choose to use these.
     'ngMessages',
     'ngResource',
     'ngRoute',

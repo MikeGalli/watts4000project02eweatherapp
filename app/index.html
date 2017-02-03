@@ -16,11 +16,9 @@
   <link rel="stylesheet" href="styles/main.css">
   <!-- endbuild -->
 </head>
-
+ 
 <body ng-app="watts4000project02eweatherappApp">
   <div class="body" ng-controller="MainCtrl">
-
-
 
     <!-- Add your site or application content here -->
 <!--Start Clouds///////////////////////////////////// -->
@@ -72,8 +70,8 @@
     </div>
 
 
-    <div class="container">
-      <div ng-view=""></div>
+    <div class="container">  <!--this contains all the html partials-->
+      <div ng-view=""></div> <!--ng-view puts the other views in this container-->
     </div>
 
     <div class="footer">
@@ -124,6 +122,7 @@
     <script src="scripts/services/pics.js"></script>
     <!-- endbuild -->
   </div>
+
 </body>
 
 </html>

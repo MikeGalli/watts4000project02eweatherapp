@@ -1,6 +1,15 @@
 'use strict';
 
 /**
+variables in this file:
+                citysearch    comes from service citysearch
+                find          comes from service citysearch = the value of query
+                query         comes from service citysearch
+                localStorage
+                citiesFound
+                storage
+
+
  * @ngdoc function
  * @name watts4000project02eweatherappApp.controller:MainCtrl
  * @description
@@ -19,4 +28,3 @@ angular.module('watts4000project02eweatherappApp')
       $scope.searchQuery = $scope.location;
     };
   });
-  

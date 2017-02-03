@@ -14,7 +14,7 @@ angular.module('watts4000project02eweatherappApp')
     $scope.currentWeather = current.query({
       cityID: $routeParams.cityID
     });
-
+ 
 
     $scope.saveCity = function(city) {
       var cityData = {

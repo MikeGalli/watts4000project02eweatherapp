@@ -6,6 +6,9 @@
  * @description
  * # ForecastCtrl
  * Controller of the watts4000project02eweatherappApp
+
+                          This Ctrl has a function that can return things like:
+                          scope object, routeParams, forecast, & pics.
  */
 angular.module('watts4000project02eweatherappApp')
   .controller('ForecastCtrl', function($scope, $routeParams, forecast, pics) {

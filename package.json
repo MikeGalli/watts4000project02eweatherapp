@@ -2,6 +2,7 @@
   "name": "watts4000project02eweatherapp",
   "private": true,
   "devDependencies": {
+    "angular-grid": "^1.16.1",
     "autoprefixer-core": "^5.2.1",
     "grunt": "^0.4.5",
     "grunt-angular-templates": "^0.5.7",
@@ -43,5 +44,8 @@
   },
   "scripts": {
     "test": "karma start test/karma.conf.js"
+  },
+  "dependencies": {
+    "angular-masonry": "^0.16.0"
   }
 }
